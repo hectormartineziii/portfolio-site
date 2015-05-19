@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-site",
+  "version": "0.0.1",
+  "description": "my own portfolio site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Hector Martinez III",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.4",
+    "path": "^0.11.14"
+  }
+}
