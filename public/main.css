@@ -1,0 +1,27 @@
+.nav a {
+	color: #5a5a5a;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 14px 10px;
+	text-transform: uppercase;
+}
+
+.nav li {
+	display: inline;
+}
+
+.pull-left li {
+	display: block;
+}
+
+.logo a {
+	margin: 0;
+	font-family: Helvetica,arial,sans-serif;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 36px;
+	display: inline-block;
+}
