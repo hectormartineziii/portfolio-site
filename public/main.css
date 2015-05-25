@@ -8,6 +8,10 @@ img {
   zoom: 60%;
 }
 
+.header .clearfix {
+  width: 100%;
+  display: flex;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
