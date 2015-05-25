@@ -8,10 +8,19 @@ img {
   zoom: 60%;
 }
 
+.text-muted{
+  width: 300px;
+}
 .header .clearfix {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
+
+.bar {
+  float: left!important;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -54,6 +63,9 @@ img {
   .container {
     max-width: 730px;
   }
+/*  .bar{
+    float: right!important;
+  }*/
 }
 .container-narrow > hr {
   margin: 30px 0;
@@ -89,6 +101,9 @@ img {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+  .bar{
+    float: right!important;
   }
 }
 
