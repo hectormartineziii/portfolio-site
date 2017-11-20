@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.12.4",
     "path": "^0.11.14",
+    "sqlite3": "^3.1.13",
     "swig": "^1.4.2"
   }
 }
