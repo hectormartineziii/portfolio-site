@@ -18,15 +18,15 @@ app.set('views', 'public');
 app.set('view engine', 'html');
 
 app.get('/', function(req,res){res.render('index',{})});
-app.get('/blog', function(req,res){res.render('../blog/index',{})});
-app.get('/blog/1', function(req,res){res.render('../blog/1/index',{})});
-app.get('/blog/2', function(req,res){res.render('../blog/2/index',{})});
-app.get('/blog/3', function(req,res){res.render('../blog/3/index',{})});
-app.get('/blog/4', function(req,res){res.render('../blog/4/index',{})});
-app.get('/blog/5', function(req,res){res.render('../blog/5/index',{})});
-app.get('/blog/6', function(req,res){
+app.get('/portfolio', function(req,res){res.render('../portfolio/index',{})});
+app.get('/portfolio/1', function(req,res){res.render('../portfolio/1/index',{})});
+app.get('/portfolio/2', function(req,res){res.render('../portfolio/2/index',{})});
+app.get('/portfolio/3', function(req,res){res.render('../portfolio/3/index',{})});
+app.get('/portfolio/4', function(req,res){res.render('../portfolio/4/index',{})});
+app.get('/portfolio/5', function(req,res){res.render('../portfolio/5/index',{})});
+app.get('/portfolio/6', function(req,res){
 	db.all("SELECT * FROM Contacts", function(err, rows){
-		res.render('../blog/6/index',{
+		res.render('../portfolio/6/index',{
 			pagename: 'list of Contacts, a sql primer',
 			contacts: rows
 		})
@@ -34,13 +34,13 @@ app.get('/blog/6', function(req,res){
 });
 
 app.use('/', express.static(path.join(__dirname, 'public')));
-app.use('/blog', express.static(path.join(__dirname,'public')));
-app.use('/blog/1', express.static(path.join(__dirname,'public')));
-app.use('/blog/2', express.static(path.join(__dirname,'public')));
-app.use('/blog/3', express.static(path.join(__dirname,'public')));
-app.use('/blog/4', express.static(path.join(__dirname,'public')));
-app.use('/blog/5', express.static(path.join(__dirname,'public')));
-app.use('/blog/6', express.static(path.join(__dirname,'public')));
+app.use('/portfolio', express.static(path.join(__dirname,'public')));
+app.use('/portfolio/1', express.static(path.join(__dirname,'public')));
+app.use('/portfolio/2', express.static(path.join(__dirname,'public')));
+app.use('/portfolio/3', express.static(path.join(__dirname,'public')));
+app.use('/portfolio/4', express.static(path.join(__dirname,'public')));
+app.use('/portfolio/5', express.static(path.join(__dirname,'public')));
+app.use('/portfolio/6', express.static(path.join(__dirname,'public')));
 
 app.listen(port, function(){
 	console.log("starting server at port: " + port)
