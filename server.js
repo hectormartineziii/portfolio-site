@@ -26,7 +26,7 @@ app.get('/blog/4', function(req,res){res.render('../blog/4/index',{})});
 app.get('/blog/5', function(req,res){
 	db.all("SELECT * FROM Contacts", function(err, rows){
 		res.render('../blog/5/index',{
-			pagename: 'List of Contacts, a SQL Primer',
+			pagename: 'list of Contacts, a sql primer',
 			contacts: rows
 		})
 	})
