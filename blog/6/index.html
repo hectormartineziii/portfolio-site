@@ -1,0 +1,30 @@
+{% extends '../../public/layout.html'%}
+{% block content %}
+
+  <!-- content start -->
+
+  <h1>list of contacts, a sql primer</h1>
+  <p>With the help of a coursera tutorial, I built a dummy database of contacts
+    to prototype a way to read the database fields and display
+    them programmatically on this website.</p> </br>
+  <p>After you create a database (I used sqlite3), the following code will
+    read the database and save them to a variable called contacts.</p> </br>
+      <img src="SQLprimer.jpg">
+  </br></br>
+  <p>Finally, to display them on the site you must add the following lines of
+    code to your HTML with the help of swig (I love you swig!!)</p></br>
+    <img src="SQLprimerhtml.jpg">
+  </br></br>
+
+  <p> And the results speak for themselves, see below</p>
+  <ul>
+  {% for contact in contacts %}
+    <li{% if loop.first %} class="first"{% endif %}>
+      {{ contact.id }}, {{ contact.FirstName }}, {{ contact.LastName }},
+      {{ contact.PhoneNumber }}, {{ contact.ZipCode }}
+    </li>
+  {% endfor %}
+  </ul>
+
+  <!-- content end -->
+{% endblock %}

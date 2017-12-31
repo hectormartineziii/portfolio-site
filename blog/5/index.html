@@ -3,28 +3,16 @@
 
   <!-- content start -->
 
-  <h1>list of contacts, a sql primer</h1>
-  <p>With the help of a coursera tutorial, I built a dummy database of contacts
-    to prototype a way to read the database fields and display
-    them programmatically on this website.</p> </br>
-  <p>After you create a database (I used sqlite3), the following code will
-    read the database and save them to a variable called contacts.</p> </br>
-      <img src="SQLprimer.jpg">
-  </br></br>
-  <p>Finally, to display them on the site you must add the following lines of
-    code to your HTML with the help of swig (I love you swig!!)</p></br>
-    <img src="SQLprimerhtml.jpg">
-  </br></br>
+  <h2>swig!!!</h2>
+  <p>OH, Swig. You're awesome.</br></br>
+  This might seem embarrasing to admit, but I was not using templating engines to build this site. Each page had a unique, complete html file. Hey Otto, why is this important you might ask?</br>
+  I'm glad you asked. It fulfills one of the great tennets of sofware development.</br></br>
+  Do not. I repeat. Don't repeat yourself. Or DRY for short.</br></br>
+  The templating engine allows you to define the headers and footers of every website in only one file. For example, this specific website has a file that defines the header and the footer in one file and the content is defined in a unique file that only contains the body content. Find out more at my <a href="https://github.com/hmartineziii?tab=repositories">github</a> profile and at the swig documentation site <a href="http://paularmstrong.github.io/swig/">here</a>.
 
-  <p> And the results speak for themselves, see below</p>
-  <ul>
-  {% for contact in contacts %}
-    <li{% if loop.first %} class="first"{% endif %}>
-      {{ contact.id }}, {{ contact.FirstName }}, {{ contact.LastName }},
-      {{ contact.PhoneNumber }}, {{ contact.ZipCode }}
-    </li>
-  {% endfor %}
-  </ul>
+
+  </p>
+
 
   <!-- content end -->
 {% endblock %}
