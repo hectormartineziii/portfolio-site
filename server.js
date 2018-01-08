@@ -38,6 +38,7 @@ app.get('/portfolio/9', function(req,res){res.render('../portfolio/9/index',{})}
 app.get('/portfolio/10', function(req,res){res.render('../portfolio/10/index',{})});
 app.get('/portfolio/11', function(req,res){res.render('../portfolio/11/index',{})});
 app.get('/portfolio/12', function(req,res){res.render('../portfolio/12/index',{})});
+app.get('/portfolio/13', function(req,res){res.render('../portfolio/13/index',{})});
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/portfolio', express.static(path.join(__dirname,'public')));
@@ -53,6 +54,7 @@ app.use('/portfolio/9', express.static(path.join(__dirname,'public')));
 app.use('/portfolio/10', express.static(path.join(__dirname,'public')));
 app.use('/portfolio/11', express.static(path.join(__dirname,'public')));
 app.use('/portfolio/12', express.static(path.join(__dirname,'public')));
+app.use('/portfolio/13', express.static(path.join(__dirname,'public')));
 
 app.listen(port, function(){
 	console.log("starting server at port: " + port)
